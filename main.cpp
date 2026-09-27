@@ -3,8 +3,10 @@
 int main() {
     int value = 0;
 
-    std::cout << "Enter a value: ";
-    std::cin >> value;
+    while (value <= 0) {
+        std::cout << "Enter a positive value: ";
+        std::cin >> value;
+    }
 
     std::cout << "Value: " << value << std::endl;
 
